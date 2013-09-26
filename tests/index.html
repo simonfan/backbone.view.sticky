@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Module boilerplate</title>
+	
+	<!-- Set a script tag to define unit as FALSE, so that the demo page is run -->
+	<script type="text/javascript">
+		window.__unit = false;
+		window.__demo = true;
+	</script>
+
+	<script type="text/javascript" data-main="main.js" src="components/requirejs/require.js"></script>
+
+
+	<style type="text/css">
+		html, body {
+			height: 100%;
+		}
+
+		.frame {
+			height: 100%;
+			width: 50%;
+
+			float: left;
+
+			overflow: auto;
+		}
+
+		#frame-1 {
+			margin-top: 40px;
+		}
+
+		#frame-1 .sticky {
+		}
+
+		#frame-1 .stuck {
+			position: fixed;
+			top: 30px;
+		}
+
+		#frame-2 .special-sticky-wrapper {
+			margin-top: -50px;
+			margin-bottom: 50px;
+		}
+
+		#frame-2 .stuck {
+			position: fixed;
+			top: 0px;
+		}
+
+		.content {
+			height: 40%;
+		}
+
+		.red {
+			background-color: red;
+		}
+
+		.blue {
+			background-color: blue;
+		}
+
+		.green {
+			background-color: green;
+		}
+
+		.gray {
+			background-color: gray;
+		}
+
+
+
+
+	</style>
+	
+</head>
+
+<body>
+
+	<div id="frame-1" class="frame">
+
+		<div class="content red"></div>
+		
+		<div class="sticky">STICKY</div>
+		<div class="content blue"></div>
+
+
+		<div class="content green"></div>
+		
+		<div class="content gray"></div>
+
+	</div>
+
+
+	<div id="frame-2" class="frame">
+
+		<div class="content green"></div>
+		
+		<div class="special-sticky-wrapper">
+			<div class="sticky">STICKY</div>
+		</div>
+
+		<div class="content gray"></div>
+
+		<div class="content green"></div>
+		
+		<div class="content gray"></div>
+
+	</div>
+
+	<br>
+	<a href="tests.html">Go to unit tests</a>
+	
+</body>
+
+</html>
